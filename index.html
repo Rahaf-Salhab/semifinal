@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>foodSto</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+  <body>
+
+      <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+        <div class="container">
+           <a class="navbar-brand" href="#"><img src="./assets/img/public/nav1.png" alt="this is logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-5">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Pages
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">About us</a></li>
+                  <li><a class="dropdown-item" href="#">Our Team</a></li>
+                  <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item2 dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Products
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">New Products</a></li>
+                  <li><a class="dropdown-item" href="#">On Sale Products</a></li>
+                  <li><a class="dropdown-item" href="#">Variation Products</a></li>
+                  <li><a class="dropdown-item" href="#">Grouped Products</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">My Acount</a>
+              </li>
+             </ul>
+             <a href="#" class="text-decoration-none"> 
+              <i class="hire-me-btn1  fa-solid fa-basket-shopping aNav ms-4 me-2"></i>
+              <i class=" hire-me-btn2 fa-solid fa-heart aNav mx-2"></i>
+              <i class="hire-me-btn3  fa-solid fa-magnifying-glass aNav mx-2"></i>
+           </a>
+          </div>
+        </div>
+      </nav>
+      <header class="header">
+    <div class="container">
+      <div class="row d-flex align-items-center flex-wrap">
+        <div class=" header-content col-md-6 col-12 hero-text ">
+            <h1 class="headH1"><span>Fresh</span> <span style="color: green;">Grocery</span> <p>Shopping</p></h1>
+            <p class="headP">It is a long established fact that a reader will be<br> the readable content of a page</p>
+            <a href="#" class="btn-custom">VIEW MORE</a>
+         </div>
+        <div class=" header-photo col-md-6 col-12 hero-image text-center ">
+              <img src="./assets/img/public/man.png" alt="Grocery Shopping">
+          </div>
+    </div>
+     </div>
+      </header>
+      <section class="global py-5">
+        <div class="container">
+            <div class="row justify-content-center text-center" id="features-container">
+            </div>
+        </div>
+    </section>
+     <!-- start products-->
+     <div class="container mt-4 ">
+       <div class="row" id="product-list"></div>
+  </div>
+       <!-- end products-->
+              <!-- start about Foodsto-->
+           <section class="new-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- النص -->
+                <div class="col-lg-6 text-center text-lg-start">
+                    <h6 class="text-success fw-bold">About Foodsto</h6>
+                    <h2 class="fw-bold">Organic Fruits & <br> Vegetables Everyday</h2>
+                    <p class="text-muted">
+                        “Buy naturally grown and 100% organic fresh fruits and vegetables picked from the farmer everyday. 
+                        We clean and disinfect each fruit and vegetable before delivering at your doorstep.”
+                    </p>
+                    <a href="#" class="btn btn-warning px-4 py-2 readMore">Read More</a>
+                </div>
+    
+                <!-- الصور -->
+                <div class=" col-lg-6 d-flex justify-content-center">
+                    <div class="d-flex">
+                        <div class="image-box position-relative newPic">
+                            <img src="./assets/img/products/banana.png" alt="Bowl 1" class="img-fluid rounded">
+                            <div class="color-overlay green-overlay"></div>
+                        </div>
+                        <div class="image-box position-relative ms-3 newPic">
+                            <img src="./assets/img/products/egg.png" alt="Bowl 2" class=" img-fluid rounded">
+                            <div class="color-overlay yellow-overlay"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+             </section>
+                  <!-- end about Foodsto-->    
+        <!--start organic products section-->
+        <div class=" organic container">
+          <h2 class="text-center my-4">Organic Products</h2>
+          <div id="products-container" class="row"></div>
+      </div>
+         <!--end organic products section-->
+         <!--start related section-->
+         <div class="container py-5">
+          <h2 class="text-center mb-4">Related Products</h2>
+          <div id="product-container" class="row g-4"></div>
+      </div>
+      <!--end related section-->
+          <!--start customers section -->
+    <section class="testimonials-section">
+      <div class="container textt-center">
+          <h2 class="section-title">What Our Customers Say</h2>
+          <div class="row" id="testimonials-container"></div>  
+      </div>
+        </section>               
+        <!--end customers section-->
+        <div class="container mt-4 pub">
+          <!-- Tabs -->
+          <ul class="nav nav-tabs">
+              <li class="nav-item">
+                  <a class="nav-link active" id="desc-tab" data-bs-toggle="tab" href="#description">Description</a>
+              </li>
+               
+          </ul>
+      
+          <!-- Tab Content -->
+          <div class="tab-content mt-3">
+              <!-- Description Tab -->
+              <div class="tab-pane fade show active" id="description">
+                  <p class="description">
+                      Pellentesque aliquet, sem eget laoreet ultrices, ipsum metus feugiat sem, quis fermentum turpis eros eget velit.  
+                      Donec ac tempus ante. Fusce ultricies massa massa. Fusce aliquam, purus eget sagittis vulputate, sapien libero 
+                      hendrerit est, sed commodo augue nisi non neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit.  
+                      Sed tempor, lorem et placerat vestibulum, metus nisi posuere nisl, id accumsan elit odio quis mi.  
+                      Cras neque metus, consequat et blandit et.
+                  </p>
+                  <!-- Images Section -->
+                  <div class="row text-center">
+                      <div class="col-md-3">
+                          <img src="./assets/img/products/saladd.png" alt="Salad" class="img-fluid rounded shadow-sm">
+                      </div>
+                      <div class="col-md-3">
+                          <img src="./assets/img/products/sand.png" alt="Sandwich" class="img-fluid rounded shadow-sm">
+                      </div>
+                      <div class="col-md-3">
+                          <img src="./assets/img/products/avo.png" alt="Avocado" class="img-fluid rounded shadow-sm">
+                      </div>
+                      <div class="col-md-3">
+                          <img src="./assets/img/products/vege.png" alt="Healthy Food" class="img-fluid rounded shadow-sm">
+                      </div>
+                  </div>
+                  <!-- Benefits List -->
+                  <ul class="mt-3 ">
+                      <li class="text-success">✔️ Heart health and stroke prevention</li>
+                      <li class="text-success">✔️ The health of the next generation</li>
+                      <li class="text-success">✔️ Strong bones and teeth</li>
+                      <li class="text-success">✔️ Better mood</li>
+                  </ul>
+      
+                  <p class="description">
+                      Pellentesque aliquet, sem eget laoreet ultrices, ipsum metus feugiat sem, quis fermentum turpis eros eget velit.  
+                      Donec ac tempus ante. Fusce ultricies massa massa. Fusce aliquam, purus eget sagittis vulputate, sapien libero 
+                      hendrerit est, sed commodo augue nisi non neque.
+                  </p>
+              </div>
+          </div>
+      </div>
+         <!-- start blog posts section-->
+    <div class="blog container my-5">
+      <h2 class="text-center">Foodsto Blog Posts</h2>
+      <div id="blog-container" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4"></div>
+     </div>
+          <!-- end blog posts section-->
+      <!-- start footer-->
+     <footer>
+      <div class="container">
+          <div class="row">
+              <div class="col-md-4 text-center">
+                  <h4><span style="color: green; font-weight: bold;">Food</span><span style="color: orange; font-weight: bold;">Sto</span></h4>
+                  <p class="subscribe">Subscribe to our newsletter and get 10% off your first purchase.</p>
+                  <div class="social-icons">
+                      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                  </div>
+              </div>
+              <div class="col-md-4 text-center">
+                  <h5 style="font-weight: bold;">Information</h5>
+                  <ul class="footer-links">
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="#">Our Team</a></li>
+                      <li><a href="#">Contact Us</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-4 text-center">
+                  <h5 style="font-weight: bold;">Quick Contact</h5>
+                  <ul class="footer-contact">
+                      <li>🏠 1234 North Avenue Luke Lane, South Bend, IN 360001</li>
+                      <li>✉️ jondoe@demo.com</li>
+                      <li>📞 +0123456789</li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      </footer>
+     <!-- end footer-->
+     
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+ <script src="./assets/js/main.js"></script>
+    </body>
+</html>
